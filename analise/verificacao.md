@@ -5,11 +5,15 @@ A fase da Verificação consiste em analisar e testar se o software foi implemen
 ## Workflows de Integração Contínua(CI)
 
 No projeto Vanna, foram identificados mecanismos de verificação baseados em pipelines de Integração Contínua (CI), configurados na pasta .github/workflows. Esses workflows automatizam processos essenciais sempre que há alterações no repositório, contribuindo para a validação técnica do código, em alinhamento com a recomendação do MPS.BR e do CMMI de realização contínua de atividades de verificação.
+
 Um dos principais workflows analisados foi o arquivo tests.yml, responsável pela execução de testes automatizados. Esse processo é acionado automaticamente a cada atualização na branch principal (main), conforme demonstrado no trecho abaixo:
 
 on:
+
  push:
+ 
  branches:
+ 
  - main
    
 Esse comportamento garante que toda modificação relevante no código seja imediatamente verificada, o que está em conformidade com as práticas do MPS.BR e do CMMI,que enfatiza a identificação antecipada de problemas por meio de verificações sistemáticas.
@@ -17,10 +21,15 @@ Esse comportamento garante que toda modificação relevante no código seja imed
 O workflow realiza a configuração do ambiente, instalação de dependências e execução dos testes por meio da ferramenta tox, conforme ilustrado a seguir:
 
 name: Install pip
+
  run: |
+ 
  python -m pip install --upgrade pip
+ 
  pip install tox
+ 
 name: Run tests
+
  run: tox
  
 A execução do comando tox permite a automatização dos testes em diferentes ambientes, contribuindo para uma verificação mais robusta do sistema, prática alinhada com a recomendação do MPS.BR de utilização de técnicas sistemáticas de verificação, bem como com o CMMI, que incentiva a verificação em múltiplos contextos de execução.
@@ -28,7 +37,9 @@ A execução do comando tox permite a automatização dos testes em diferentes a
 Além disso, o workflow utiliza variáveis de ambiente para integração com diferentes serviços externos:
 
 env:
+
  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+ 
  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
  
 Isso indica que os testes podem envolver interações reais com APIs de modelos de linguagem, ampliando o escopo da verificação e reforçando a cobertura dos testes, o que também está alinhado às práticas do CMMI de validação técnica dos componentes integrados.
@@ -36,13 +47,19 @@ Isso indica que os testes podem envolver interações reais com APIs de modelos 
 Outro workflow identificado foi o arquivo python-publish.yaml, que é executado quando uma nova versão do sistema é publicada:
 
 on:
+
  release:
+ 
  types: [published]
 
 Esse processo realiza a construção do pacote Python e sua posterior publicação:
+
 name: Build package
+
  run: python -m build
+ 
 name: Publish package
+
  uses: pypa/gh-action-pypi-publish@...
  
 Embora esse workflow não execute testes diretamente, ele contribui para a verificação ao garantir que o sistema pode ser corretamente empacotado e distribuído, reduzindo riscos de falhas em ambientes de produção, o que também está alinhado com a garantia de qualidade proposta pelo MPS.BR e com o CMMI, que considera a verificação de artefatos de entrega como parte essencial do processo.
@@ -80,5 +97,6 @@ O arquivo **test_workflow.py** é responsável por validar o funcionamento dos f
 ## Conclusão
 
 Apesar da forte adoção de testes automatizados e integração contínua, não foram identificadas evidências claras de práticas formais de revisão técnica estruturada ou de rastreabilidade entre requisitos e casos de teste, aspectos também recomendados pelo MPS.BR e pelo CMMI para aumentar a maturidade do processo de verificação.
+
 Dessa forma, conclui-se que o projeto apresenta boa aderência às práticas de verificação no que se refere à automação e execução de testes, porém ainda possui lacunas relacionadas à formalização do processo e à rastreabilidade, caracterizando uma aderência parcial ao modelo de maturidade proposto tanto pelo MPS.BR quanto pelo CMMI.
 
