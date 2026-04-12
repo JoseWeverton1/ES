@@ -39,6 +39,11 @@ A ausência de discussões estruturadas pode indicar falta de formalização no 
 
 Observa-se ausência de práticas formais como RFCs ou discussões estruturadas, o que indica baixa maturidade no gerenciamento de requisitos.
 
+### Gestão de Mudanças
+
+Observa-se que a mudança foi realizada de forma direta, com pouca evolução ao longo da discussão na issue.
+
+A ausência de um processo formal de controle de mudanças indica uma abordagem mais ágil, porém com baixa participação colaborativa, o que pode impactar a qualidade da análise inicial do requisito.
 
 ## Requisito 2 - Suporte à integração com Gemini LLM
 
@@ -61,6 +66,12 @@ A solução foi implementada por meio de um commit associado, que adicionou ou c
 O fluxo observado demonstra boa comunicação entre equipe e usuário, com resposta ágil e validação prática da solução. Esse tipo de interação evidencia um processo eficaz de gerenciamento de requisitos, mesmo sem formalização estruturada.
 
 Entretanto, não foram identificados processos formais de documentação ou RFC, indicando uma abordagem mais informal no tratamento de requisitos.
+
+### Gestão de Mudanças
+
+Observa-se que o requisito evoluiu com base no feedback direto do usuário, que testou e validou a solução proposta.
+
+Esse fluxo demonstra um processo iterativo típico de metodologias ágeis, porém sem formalização de controle de mudanças, o que pode limitar a rastreabilidade das decisões.
 
 ## Requisito 3 - Correção da integração com PGVector
 
@@ -98,3 +109,17 @@ Este caso demonstra um processo completo de rastreabilidade, desde a identifica�
 Entretanto, evidencia falhas no processo de qualidade, especialmente na ausência de testes antes da integração inicial da funcionalidade, o que resultou na introdução de erros no sistema.
 
 Esse cenário reforça a importância de práticas de verificação e validação no desenvolvimento de software.
+
+### Gestão de Mudanças
+
+Observa-se que o requisito evoluiu significativamente ao longo da discussão, com identificação de problemas, propostas de solução e posterior implementação via Pull Request.
+
+Esse processo evidencia adaptação e aprendizado da equipe, porém a ausência de um controle formal de mudanças pode ter contribuído para a introdução inicial de falhas no sistema.
+
+## Observação sobre RFCs
+
+Não foram identificados processos formais de RFC (Request for Comments) no projeto analisado.
+
+As decisões são tomadas diretamente nas issues e Pull Requests, indicando uma abordagem mais informal e ágil na definição e evolução dos requisitos.
+
+Essa ausência pode impactar a documentação e a rastreabilidade de decisões mais complexas.
