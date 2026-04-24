@@ -10,7 +10,7 @@ O objetivo do trabalho é realizar uma auditoria rigorosa no projeto open source
 
 Abaixo está o mapeamento dos artefatos produzidos pela equipe. O relatório escrito aprofundado encontra-se na raiz, enquanto os insumos técnicos estão divididos em diretórios:
 
-* 📄 **A1\_Vanna\_Matheus.pdf**: O relatório principal e completo contendo as 20+ páginas da auditoria acadêmica.  
+* 📄 **A1\_Vanna\_Matheus.pdf**: O relatório principal e completo contendo a auditoria acadêmica.  
 * 🗺️ **/diagramas**: Contém o diagrama de classes UML (arquitetura\_vanna.png) evidenciando o desacoplamento da IA (Eixo III).  
 * 📸 **/evidencias**: Prints físicos de rastreabilidade transversal (Issues/PRs) e dos workflows de CI/CD em execução.  
 * 🚀 **/plano\_de\_melhoria**: *\[Diferencial\]* Diretório com os artefatos estruturais propostos pela equipe para elevar a maturidade do projeto ao MPS.BR Nível G (inclui templates de RFCs, Registro de Riscos e Matriz de Rastreabilidade).
