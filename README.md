@@ -12,7 +12,7 @@ Abaixo está o mapeamento dos artefatos produzidos pela equipe. O relatório esc
 
 * 📄 **A1\_Vanna\_Matheus.pdf**: O relatório principal e completo contendo a auditoria acadêmica.  
 * 🗺️ **/diagramas**: Contém o diagrama de classes UML (arquitetura\_vanna.png) evidenciando o desacoplamento da IA (Eixo III).  
-* 📸 **/evidencias**: Prints físicos de rastreabilidade transversal (Issues/PRs) e dos workflows de CI/CD em execução.  
+* 📸 **/evidencias**: Links e prints físicos de rastreabilidade transversal (Issues/PRs) e dos workflows de CI/CD em execução.  
 * 🚀 **/plano\_de\_melhoria**: *\[Diferencial\]* Diretório com os artefatos estruturais propostos pela equipe para elevar a maturidade do projeto ao MPS.BR Nível G (inclui templates de RFCs, Registro de Riscos e Matriz de Rastreabilidade).
 
 ## **📊 Sumário Executivo: O que você encontrará no PDF?**
