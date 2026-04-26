@@ -10,10 +10,11 @@ O objetivo do trabalho é realizar uma auditoria rigorosa no projeto open source
 
 Abaixo está o mapeamento dos artefatos produzidos pela equipe. O relatório escrito aprofundado encontra-se na raiz, enquanto os insumos técnicos estão divididos em diretórios:
 
-* 📄 **A1\_Vanna\_Matheus.pdf**: O relatório principal e completo contendo a auditoria acadêmica.  
-* 🗺️ **/diagramas**: Contém o diagrama de classes UML (arquitetura\_vanna.png) evidenciando o desacoplamento da IA (Eixo III).  
-* 📸 **/evidencias**: Links e prints físicos de rastreabilidade transversal (Issues/PRs) e dos workflows de CI/CD em execução.  
 * 🚀 **/analise**: Análise detalhada dos eixos apresentados na auditoria com possivelmente evidências complementares adicionais em relação às utilizadas no pdf.
+* 🗺️ **/diagramas**: Contém o diagrama de classes UML (arquitetura\_vanna.png) evidenciando o desacoplamento da IA (Eixo III).  
+* 📸 **/evidencias**: Links e prints físicos de rastreabilidade transversal (Issues/PRs) e dos workflows de CI/CD em execução.
+* 📄 **A1\_Vanna\_Matheus.pdf**: O relatório principal e completo contendo a auditoria acadêmica.  
+
 
 ## **📊 Sumário Executivo: O que você encontrará no PDF?**
 
